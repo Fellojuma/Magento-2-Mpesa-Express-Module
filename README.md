@@ -1,1 +1,1 @@
-# Safaricom
+Magento 2 module for mpesa express
