@@ -1,0 +1,44 @@
+.return-message-paybill
+{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.pay_false{
+    color:#E82A30 !important;
+}
+
+.pay_true{
+    color:#67AD46 !important;
+}
+
+.lipanampesa-logo
+{
+    background-image: url("../images/lipa_na_mpesa_logo_small.png");
+    float:right;
+    width:145px !important;
+    height:37px;
+    border:0px;
+    background-repeat: no-repeat;
+}
+
+.paybill-preload
+{
+    background-image: url("../images/preload.gif");
+    width:24px !important;
+    height:24px;
+}
+
+.paybill-accept{
+    background-color:#ccc;
+    width:100%;
+}
+.paybill-accept h4{
+    font-size:18px;
+    color:#fff;
+    margin:2px;
+    padding:4px;
+    text-align:center;
+
+}
+

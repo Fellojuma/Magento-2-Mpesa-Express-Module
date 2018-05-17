@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Safaricom_Mpesa::mpesaadmin"
+                title="Safaricom Mpesa"
+                translate="title"
+                module="Safaricom_Mpesa"
+                sortOrder="300"
+                parent="Flexycode_Configs::flexycode_report"
+                action="mpesaadmin/mpesa"
+                resource="Safaricom_Mpesa::mpesaadmin"
+        />
+    </menu>
+
+</config>

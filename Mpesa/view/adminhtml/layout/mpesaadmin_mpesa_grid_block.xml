@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="mpesaadmin.mpesa.grid.container">
+            <block class="Safaricom\Mpesa\Block\Adminhtml\Mpesa\Grid" name="mpesaadmin.mpesa.grid" as="grid" />
+        </referenceBlock>
+    </body>
+</page>
