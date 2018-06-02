@@ -67,9 +67,9 @@ class Startpayment extends \Magento\Framework\App\Action\Action
             'PartyA' =>  $this->_mpesahelper->formatPhone($phone),
             'PartyB' => $paybill,
             'PhoneNumber' => $this->_mpesahelper->formatPhone($phone),
-            'CallBackURL' => 'http://172.104.179.147/flexpay3/safaricommpesa/mpesa/stkpushlistener',
+            'CallBackURL' => $this->getUrl('safaricommpesa/mpesa/stkpushlistener'),
             'AccountReference' => $account_id,
-            'TransactionDesc' => 'Tuskys Order'
+            'TransactionDesc' => 'Magento Order'
         );
 
         $data_string = json_encode($curl_post_data);
