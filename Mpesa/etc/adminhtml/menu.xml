@@ -7,10 +7,11 @@
                 translate="title"
                 module="Safaricom_Mpesa"
                 sortOrder="300"
-                parent="Flexycode_Configs::flexycode_report"
+                parent="Magento_Reports::report_salesroot"
                 action="mpesaadmin/mpesa"
                 resource="Safaricom_Mpesa::mpesaadmin"
         />
+		
     </menu>
 
 </config>
