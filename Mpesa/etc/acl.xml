@@ -3,7 +3,6 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-			
 				<resource id="Magento_Reports::report">
                     <resource id="Magento_Reports::salesroot">
 						<resource id="Safaricom_Mpesa::mpesaadmin" title="Safaricom Mpesa" translate="title" sortOrder="100">
