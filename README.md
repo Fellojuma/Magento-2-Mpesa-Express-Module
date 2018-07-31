@@ -1,9 +1,10 @@
-The Safaricom Mpesa Express module gives your store an possibility to receive payments via M-pesa STK push.
+The Safaricom Mpesa Express module gives your store an ability to receive payments via M-pesa STK push.
 
 Features
 
-1. Allows payments via M-pesa stk push
+1. Adds  M-pesa as a payment method during customer checkout 
 2. Give you an ability to configure your M-pesa credentials on [Stores -> Configuration -> Sales -> Payments]
+3. View live payment feeds on [Reports -> Sales -> Safaricom Mpesa]
 
 
 Setup Step:
