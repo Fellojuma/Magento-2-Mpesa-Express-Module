@@ -9,5 +9,5 @@ Features
 
 Setup Step:
 
-copy Safaricom/Mpesa folder inside app/code (Important: Be sure to create the 'Safaricom' folder under app/code, the copy the 'Mpesa' folder inside it)
-run following command 'php bin/magento setup:upgrade && php bin/magento setup:static-content:deploy'
+1. Copy Safaricom/Mpesa folder inside app/code (Important: Be sure to create the 'Safaricom' folder under app/code, the copy the 'Mpesa' folder inside it)
+2. Run following command 'php bin/magento setup:upgrade && php bin/magento setup:static-content:deploy'
