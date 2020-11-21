@@ -34,9 +34,17 @@ class Startpayment extends \Magento\Framework\App\Action\Action
        // $phone = '254720108418';
 
         $token = $this->_mpesahelper->generateToken();
-        $url = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
+        // $url = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
-        $url = $this->_mpesahelper->getGeneralConfig('mpesa_request_url');
+        // $url = $this->_mpesahelper->getGeneralConfig('mpesa_request_url');
+
+        if($this->_mpesahelper->getGeneralConfig('live_or_dev')){
+            $url = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
+        }
+        else{
+            $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
+        }
+
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$token)); //setting custom header
@@ -68,6 +76,7 @@ class Startpayment extends \Magento\Framework\App\Action\Action
             'PartyB' => $paybill,
             'PhoneNumber' => $this->_mpesahelper->formatPhone($phone),
             'CallBackURL' => $this->_url->getUrl('safaricommpesa/mpesa/stkpushlistener'),
+            //'CallBackURL' => 'http://45.56.114.100/safaricommpesa/mpesa/stkpushlistener',
             'AccountReference' => $account_id,
             'TransactionDesc' => 'Magento Order'
         );

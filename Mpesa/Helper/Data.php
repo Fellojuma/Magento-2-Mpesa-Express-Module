@@ -48,9 +48,8 @@ class Data extends AbstractHelper
     {
 
         $credentials = base64_encode($this->getGeneralConfig('consumer_key').':'.$this->getGeneralConfig('consumer_secret'));
-        //$url = 'https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
-        
-        if($this->getConfigValue('live_or_dev')){
+        //$url = 'https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';        
+        if($this->getGeneralConfig('live_or_dev')){
             $url = 'https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
         }
         else{

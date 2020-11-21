@@ -40,9 +40,9 @@
                     <label>Passkey</label>
                 </field>
 
-                <field id="mpesa_request_url" translate="label" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                <!-- <field id="mpesa_request_url" translate="label" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Mpesa Request Url</label>
-                </field>
+                </field> -->
 
 
                 <field id="order_status" translate="label" type="select" sortOrder="39" showInDefault="1" showInWebsite="1" showInStore="0">
